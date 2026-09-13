@@ -1,0 +1,41 @@
+{
+  "itemConfig": {
+    "Fingerprint": {},
+    "FingerprintOptical": {},
+    "BackCamera": {},
+    "BackCamera2": {},
+    "BackCamera3": {},
+    "BackCamera4": {},
+    "BackCamera5": {},
+    "FrontCamera": {},
+    "FrontCamera2": {},
+    "TouchSelf": {},
+    "TouchSelfEx": {},
+    "SIM": {},
+    "SdCard": {},
+    "Accelerate": {},
+    "Accelerate2": {},
+    "Compass": {},
+    "Gyroscope": {},
+    "Gyroscope2": {},
+    "LightSensor": {},
+    "LightSensor2": {},
+    "LightSensorSub": {},
+    "LightSensorSub2": {},
+    "LightSensorBack": {
+      "feature": "SENSOR_LIGHT_BACK_BOARD_SUPPORT"
+    },
+    "Proximity": {},
+    "Proximity2": {
+      "feature": "SENSOR_PROXIMITY2_BOARD_SUPPORT"
+    },
+    "BatteryCheck": {},
+    "Flashlight": {
+      "feature": "CAMERA_FLASHLIGHT_QT_SUPPORT"
+    },
+    "Bluetooth": {},
+    "WiFi": {},
+    "GPS": {},
+    "PulseOximeter": {}
+  }
+}

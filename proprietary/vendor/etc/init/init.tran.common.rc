@@ -1,0 +1,3 @@
+on property:ro.boot.consoledebug=1 && property:ro.debuggable=0
+    start console
+

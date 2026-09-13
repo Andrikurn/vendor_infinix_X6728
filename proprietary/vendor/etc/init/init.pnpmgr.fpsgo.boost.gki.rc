@@ -1,0 +1,34 @@
+on boot
+    chown root system /sys/pnpmgr/fpsgo_boost/boost_enable
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/boost_enable
+    chown root system /sys/pnpmgr/fpsgo_boost/boost_mode
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/boost_mode
+    chown root system /sys/pnpmgr/fpsgo_boost/fstb/fstb_fps_list
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fstb/fstb_fps_list
+#SPD: add XLBQHBWYHW-72 for fpsgo boost fix fps feature by yuanjiong.gao 20200730 start
+    chown root system /sys/pnpmgr/fpsgo_boost/fstb/fstb_fix_fps
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fstb/fstb_fix_fps
+    chown root system /sys/pnpmgr/fpsgo_boost/fstb/fstb_fix_fps_comm
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fstb/fstb_fix_fps_comm
+#SPD: add XLBQHBWYHW-72 for fpsgo boost fix fps feature by yuanjiong.gao 20200730 end
+    chown root system /sys/pnpmgr/fpsgo_boost/fbt/bhr
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fbt/bhr
+    chown root system /sys/pnpmgr/fpsgo_boost/fbt/bhr_opp
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fbt/bhr_opp
+    chown root system /sys/pnpmgr/fpsgo_boost/fbt/ultra_rescue
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fbt/ultra_rescue
+    chown root system /sys/pnpmgr/fpsgo_boost/fbt/boost_render
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fbt/boost_render
+#SPD: add XLBQHBWYHW-72 for fpsgo boost forecase rescue feature by yuanjiong.gao 20200730 start
+    chown root system /sys/pnpmgr/fpsgo_boost/fbt/forecast_resuce_en
+    chmod 0664 /sys/pnpmgr/fpsgo_boost/fbt/forecast_resuce_en
+#SPD: add XLBQHBWYHW-72 for fpsgo boost forecast rescue feature by yuanjiong.gao 20200730 end
+
+on property:vendor.prop.pnp.fpsgo.state=disable_pending
+    write /sys/pnpmgr/fpsgo_boost/boost_enable 0
+
+on property:vendor.prop.pnp.fpsgo.boost=disable
+    write /sys/pnpmgr/fpsgo_boost/boost_mode "disable_activity,disable_mode"
+
+on property:vendor.prop.pnp.fpsgo.boost=enable
+    write /sys/pnpmgr/fpsgo_boost/boost_enable 1

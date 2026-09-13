@@ -1,0 +1,7 @@
+service vendor.boot-default /vendor/bin/hw/android.hardware.boot-service.mtk
+    class early_hal
+    user root
+    group root
+    #SDD:modify X6870AEE-1071 by lihua.sheng 2025/04/07 start
+    interface aidl android.hardware.boot.IBootControl/default
+    #SDD:modify X6870AEE-1071 by lihua.sheng 2025/04/07 end

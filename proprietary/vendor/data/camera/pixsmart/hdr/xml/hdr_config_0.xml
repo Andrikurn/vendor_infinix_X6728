@@ -1,0 +1,285 @@
+<!-- 
+调试前必读：调试参数均在标签属性中定义，参数间使用英文分号;隔开
+    value="0" ==========>无任何括号，不能做区分
+    value="[0]" ========>英文中括号，可景/人区分，仅一位参数表示通配
+    value="[0;1]" ======>英文中括号，可景/人区分，首位用于景，次位用于人
+    value="{-1;0;+1}" ==>英文大括号，仅用于定义EV序列
+  单个标签所有可调试属性，见文末阐释
+-->
+<Config>
+    <GlobalSetting CameraID="0">
+        <!-- 项目标识字段 -->
+        <productName>"X6728(HDR Main 20250430)"</productName>
+
+        <!-- 项目配置 -->
+        <algoMode value="0" description="-1:manualEV  0:HDR  1:Normal；2:SuperNight" />
+        <sceneLux outdoor="[260]" indoor="[360]" />
+        <switch dump_preview="0" face_detect="0" />
+        <dropFrame enable="0" plus_th="0.2" minus_th="-0.2" />
+
+        <!-- 直方图统计设置 mode(0:不加权统计 1:加权统计) -->
+        <statDefined mode="0" lowlight="64" highlight="192" non_oe="248" oe="253" />
+
+        <!-- 场景检测阈值 -->
+        <sceneDetect in.evplus="0.4" in.evminus="-0.4" out.evplus="3.4" stable_coef="0.1" />
+    </GlobalSetting>
+    <SegmentParam CameraID="0">
+        <!-- 室外场景 -->
+        <iso value="300">
+            <hdrInTh lowlight="0.05" highlight="0.05" overexposure="0.01" />
+            <condition>
+                <luxValue value="190">
+                    <overexposure value="0.04">
+                        <queue_ev norm="{0;-1.2;+1}" face="{0;-1;--1}" />
+                        <evRange min="[-3.0;-3.5]" max="[1.0]" />
+                        <sharpness global="[0.08;0]" face_ROI="0.0" />
+                    </overexposure>
+                    <overexposure value="0.1">
+                        <queue_ev norm="{+1;-1;--1}" face="{0;-1;--1}" />
+                        <evRange min="[-3.5;-4.5]" max="[1.0]" />
+                        <sharpness global="[0.08;0]" face_ROI="0.0" />
+                    </overexposure>
+                    <overexposure value="1.0">
+                        <queue_ev norm="{+1;-1;--1}" face="{0;-1;--1}" />
+                        <sharpness global="[0.08;0]" face_ROI="0.0" />
+                    </overexposure>
+                </luxValue>
+                <luxValue value="260">
+                    <overexposure value="0.04">
+                        <queue_ev norm="{0;-1.2;+1}" face="{0;-1;--1}" />
+                        <evRange min="[-3.0;-3.5]" max="[1.0]" />
+                    </overexposure>
+                    <overexposure value="0.1">
+                        <queue_ev norm="{+1;-1;--1}" face="{0;-1;--1}" />
+                        <evRange min="[-3.5;-4.5]" max="[1.0]" />
+                    </overexposure>
+                    <overexposure value="1.0">
+                        <queue_ev norm="{+1;-1;--1}" face="{0;-1;--1}" />
+                    </overexposure>
+                </luxValue>
+                <luxValue value="380">
+                    <overexposure value="0.04">
+                        <queue_ev norm="{0;-1.2;+1}" face="{0;-1;--1}" />
+                        <evRange min="[-3.0;-3.5]" max="[1.0]" />
+                        <deghost mfnr="[0.2]" hdr="[0.7;0.6]" />
+                        <preservation chroma="[0.9;0.9]" luma_texture="[0.0]" />
+                    </overexposure>
+                    <overexposure value="0.1">
+                        <queue_ev norm="{+1;-1;--1}" face="{0;-1;--1}" />
+                        <evRange min="[-3.5;-4.5]" max="[1.0]" />
+                        <deghost mfnr="[0.2]" hdr="[0.7;0.6]" />
+                        <preservation chroma="[0.9;0.9]" luma_texture="[0.0]" />
+                    </overexposure>
+                    <overexposure value="1.0">
+                        <queue_ev norm="{+1;-1;--1}" face="{0;-1;--1}" />
+                        <deghost mfnr="[0.2]" hdr="[0.7;0.6]" />
+                        <preservation chroma="[0.9;0.9]" luma_texture="[0.0]" />
+                    </overexposure>
+                </luxValue>
+            </condition>
+            <baseFrame index="[0]" />
+            <evRange min="[-4.0;-5.0]" max="[1.0]" />
+            <maxEVLimit value="[-3.0]" />
+            <fusionTh ghost="[0.7]" />
+            <deghost mfnr="[0.2]" hdr="[0.7]" />
+            <sharpness global="[0.0]" face_ROI="0.0" />
+            <saturation global="[1.0]" />
+            <contrast global="[0.0]" />
+            <noiseReduction chroma="[0.0]" luma="[0.0]" />
+            <preservation chroma="[0.0]" luma_texture="[0.0]" />
+            <toneBrighten global="[0.0]" />
+            <switch mfnr_chroma_nr="[0]" auto_enhance="[0]" />
+        </iso>
+        <!-- 室内场景 -->
+        <iso value="800">
+            <hdrInTh lowlight="0.05" highlight="0.05" overexposure="0.01" />
+            <condition>
+                <lowlight value="0.15">
+                    <queue_ev norm="{0;0;0;0;0;0;-1;--1}" />
+                </lowlight>
+                <lowlight value="0.35">
+                    <queue_ev norm="{0;0;0;0;0;0;-1;--1}" />
+                </lowlight>
+                <lowlight value="0.5">
+                    <queue_ev norm="{1;1;1;1;1;1;-1;--1}" face="{0;0;0;0;0;0;-1;--1}" />
+                    <evRange min="[-5.0]" max="[0.3]" />
+                </lowlight>
+                <lowlight value="1">
+                    <queue_ev norm="{1;1;1;1;1;1;-1;--1}" face="{0;0;0;0;0;0;-1;--1}" />
+                    <evRange min="[-5.0]" max="[0.5]" />
+                </lowlight>
+            </condition>
+            <baseFrame index="[5]" />
+            <evRange min="[-5.0]" max="[0]" />
+            <maxEVLimit value="[-3.5;-3.0]" />
+            <fusionTh ghost="[0.7]" />
+            <deghost mfnr="[0.15]" hdr="[0.6]" />
+            <sharpness global="[0.0]" face_ROI="0.0" />
+            <saturation global="[1.0]" />
+            <contrast global="[0.0]" />
+            <noiseReduction chroma="[0.1]" luma="[0.0]" />
+            <preservation chroma="[0.9;0.9]" luma_texture="[0.0]" />
+            <toneBrighten global="[0.0]" />
+            <switch mfnr_chroma_nr="[0]" auto_enhance="[0]" />
+        </iso>
+        <!-- 夜景场景，默认不使用EV+ -->
+        <iso value="1600">
+            <hdrInTh lowlight="0.05" highlight="0.05" overexposure="0.01" />
+            <queue_ev norm="{0;0;0;0;0;0;-1;--1}" />
+            <baseFrame index="[5]" />
+            <evRange min="[-6.0;-5]" max="[0.0]" />
+            <maxEVLimit value="[-4.0;-3.0]" />
+            <fusionTh ghost="[0.7]" />
+            <deghost mfnr="[0.1]" hdr="[0.5]" />
+            <sharpness global="[0.0]" face_ROI="0.0" />
+            <saturation global="[1]" />
+            <contrast global="[0.0]" />
+            <noiseReduction chroma="[0.28;0.21]" luma="[0.0]" />
+            <preservation chroma="[0.9;0.9]" luma_texture="[0.0]" />
+            <toneBrighten global="[0.0]" />
+            <switch mfnr_chroma_nr="[0]" auto_enhance="[0]" />
+        </iso>
+        <iso value="3200">
+            <hdrInTh lowlight="0.05" highlight="0.05" overexposure="0.01" />
+            <condition>
+                <overexposure value="0.41">
+                    <noiseReduction chroma="[0.3;0.2]" luma="[0.0]" />
+                    <preservation chroma="[0.9;0.9]" luma_texture="[0.0]" />
+                    <baseFrame index="[4]" />
+                </overexposure>
+                <overexposure value="1.0">
+                    <noiseReduction chroma="[0.3;0]" luma="[0.0]" />
+                    <preservation chroma="[0.9;0.99]" luma_texture="[0.0]" />
+                </overexposure>
+            </condition>
+            <queue_ev norm="{0;0;0;0;0;0;-1;--1}" />
+            <baseFrame index="[5]" />
+            <evRange min="[-6.0;-5]" max="[0.0]" />
+            <maxEVLimit value="[-4.0;-3.0]" />
+            <fusionTh ghost="[0.7]" />
+            <deghost mfnr="[0.1]" hdr="[0.5]" />
+            <sharpness global="[0.0]" face_ROI="0.0" />
+            <saturation global="[1]" />
+            <contrast global="[0.0]" />
+            <noiseReduction chroma="[0.3;0.2]" luma="[0.0]" />
+            <preservation chroma="[0.9;0.9]" luma_texture="[0.0]" />
+            <switch mfnr_chroma_nr="[1]" auto_enhance="[0]" />
+        </iso>
+        <iso value="12800">
+            <hdrInTh lowlight="0.05" highlight="0.05" overexposure="0.01" />
+            <condition>
+                <overexposure value="0.25">
+                    <noiseReduction chroma="[0.5;0.1]" luma="[0.0]" />
+                    <preservation chroma="[0.8;0.99]" luma_texture="[0.0]" />
+                </overexposure>
+                <overexposure value="0.41">
+                    <noiseReduction chroma="[0.3;0.2]" luma="[0.0]" />
+                    <preservation chroma="[0.9;0.99]" luma_texture="[0.0]" />
+                </overexposure>
+                <overexposure value="1.0">
+                    <noiseReduction chroma="[0.3;0.0]" luma="[0.0]" />
+                    <preservation chroma="[0.9;0.99]" luma_texture="[0.0]" />
+                </overexposure>
+            </condition>
+            <queue_ev norm="{0;0;0;0;0;0;-1;--1}" />
+            <baseFrame index="[5]" />
+            <evRange min="[-6.0;-5.5]" max="[0.0]" />
+            <maxEVLimit value="[-4.5;-3.5]" />
+            <fusionTh ghost="[0.7]" />
+            <deghost mfnr="[0.09]" hdr="[0.5]" />
+            <sharpness global="[0.0]" face_ROI="0.0" />
+            <saturation global="[1]" />
+            <contrast global="[0.0]" />
+            <switch mfnr_chroma_nr="[1]" auto_enhance="[0]" />
+        </iso>
+    </SegmentParam>
+</Config>
+
+<!-- 各参数说明
+    {分段参数标签}
+        <iso>      ：参数分段: 从小往大搜索，当前iso<=iso velue时，使用该分段的参数；搜索到最后仍不匹配则使用最后一个iso段参数
+        <condition>：单段参数嵌套: 通过声明，可在嵌套最后一层重定义各个参数，嵌套区分条件包括五个，并且严格按照优先级顺序：
+                      luxValue > overexposure_pct > highlight_pct > lowlight_pct > DR
+                      低优先级的条件不可使用高优先级的条件作为子标签
+
+    {分段参数声明}
+        <queue_ev>：通用EV系数配置，直接乘在对应的算法输出上，得到最终EV值
+            norm：通用EV系数配置
+            face：专门用于人像场景的EV系数配置
+            声明：1. 系数前面有一个'+'表示EV+，两个'+'表示EV++；同理一个'-'表示EV-，两个'-'表示EV- -；0表示EV0，最大支持EV+++和EV- - -
+                  2. 存在两张及以上EV+表明需要对EV+进行多帧降噪；其他EV值同理
+                  3. 存在多张EV+时需要系数相等，否则取均值， +1.1;+1.2;+1.6 <==> +1.3;+1.3+1.3；其他EV值同理
+                  4. 对应的系数作用在对用的算法输出上，EV- -系数为1.1，算法计算出的EV- -值为-2.8 ==> EV- - = 1.1 * -2.8 = -3.08
+                  5. 需要定义EV-才能定义EV- -，否则强制将EV- -转为EV-；EV++同理
+        <baseFrame>：基准帧相关定义
+            index：对应的序列中的序号，序号从0开始计数
+        <evRange>：单独为每一组参数定制一个EV值的限制范围，所有EV值均被此范围限制
+            min      ：通用模式下，设置的最小EV值
+            max      ：通用模式下，设置的最大EV值
+            flash.min：闪光灯模式下，设置的最小EV值
+            flash.max：闪光灯模式下，设置的最大EV值
+        <fusionTh>：融合阈值，阈值越大融合概率越高，若不融合则直接输出base frame
+            ghost：根据ghost面积大小判定，值越大表明可接受的ghost区域越大，融合概率越高
+        <motionTh>：判断运动区域阈值，阈值越大融合概率越高，若不融合则直接输出base frame
+            ghost：根据ghost面积大小判定，值越大表明可接受的ghost区域越大，融合概率越高
+        <deghost>：去鬼影相关参数，影响对噪声的判断
+            hdr ：不同曝光多帧融合的去鬼影强度，值越大，去鬼影越强，降噪越弱，取值范围[0.0, 1.0]，默认为0.7, 对于高ISO的场景，设置小于0.7的值对噪点有改善
+            mfnr：相同曝光多帧融合的去鬼影强度，值越大，去鬼影越强，降噪越弱，取值范围[0.0, 1.0]，默认为0.2
+        <sharpness>：融合后的单帧图像，进行锐度增强
+            global  ：针对整幅图像进行锐度增强，取值范围[0.0, 1.0]，默认为0，建议值0.3-0.5
+            face_ROI：单独针对人脸区域进行锐度增强
+        <saturation>：融合后的单帧图像，进行饱和度调整
+            global：针对整幅图像进行饱和度调整，取值范围[1.0, 1.5]，默认为1.0
+        <contrast>：融合后的单帧图像，进行对比度增强
+            global   ：针对整幅图像进行对比度增强，取值范围[0.0, 1.0]，默认为0.0
+            highlight：针对欠爆帧的高光区域进行对比度增强
+        <noiseReduction>：融合后的单帧图像，进行去噪
+            luma  ：去亮噪强度
+            chroma：去彩噪强度，取值范围[0.0, 1.0]，默认为0，建议值0.2-0.6
+        <preservation>：降噪时对细节的保留，配合<noiseReduction>调试
+            chroma      ：降噪时保留色彩的程度
+            luma_texture：降噪时保留细节的程度
+        <toneBrighten>：融合后的单帧图像，进行tone mapping提亮
+            global：针对整帧图像进行提亮，取值范围[0.0, 1.0]，默认为0，建议低iso段设为0.3
+        <switch>：融合过程中，不分模块开关
+            auto_enhance  ：算法自动进行色彩、对比度、锐度增强，强度不可控制，全由算法自适应；默认关闭
+            mfnr_chroma_nr：相同曝光多帧融合过程中，是否开启降彩噪；默认关闭
+        <target>：影响算法提亮EV值计算，分人脸亮度、低亮区域平均亮度和图像整体平均亮度三个可调阈值
+            face_y    ：人脸亮度的目标值，提升人像场景算法计算的EV+值
+            mean_y    ：平均亮度的目标值，提升人像/空景算法计算出的EV+值
+            lowlight_y：低亮像素的目标均值
+        <hdrInTh>：若GlobalSetting的in_ev_minus_th、in_ev_plus_th仍不满足阈值调试，可启用该字段配合调试
+            lowlight    ：低亮像素占比阈值
+            highlight   ：高亮像素占比阈值
+            overexposure：过曝像素占比阈值
+            说明：1. 同时满足lowlight、highlight和overexposure三个统计达到阈值即可进入HDR
+                  2. 阈值需要根据EV配置决定，如有EV+则需关注lowlight阈值，有EV-则需关注highlight和overexposure阈值
+                  3. 假设暗环境下不启用EV+，则无需关注lowlight，可将其置0，满足其他两个条件即可进入HDR
+                  4. 假设只注重高光抑制且只希望通过overexposure阈值控制，则将lowlight和highlight均置0即可
+
+    {全局参数声明}
+        <productName>：自定义项目标识字段，可按照此格式填写  项目代号(模式 前/后置 修改日期) ==> S666(HDR Main 0101)
+        <algoMode>：对应不同的算法模式，以及传入的直方图信息/图像Y通道信息，算法计算提亮/压暗EV值的模式
+        <sceneLux>:(分室外场景、室内场景、较暗夜景，不同的scene对应不同的融合策略)
+            outdoor:小于指定luxValue(算法内部计算)为室外场景
+            indoor :小于指定luxValue(算法内部计算)并且大于outdoor luxValue为室内场景，大于则为室外场景
+        <switch>:(部分全部功能使能开关)
+            dump_preview：是否dump预览图像
+            face_detect ：是否启用算法集成的人脸检测
+        <dropFrame>：是否采用丢帧策略；算法内部判断若EV+或EV-与base帧曝光差异过于接近，则会将其丢弃
+            enable  ：使能开关
+            plus_th ：EV+丢帧阈值，当EV+计算出来的EV小于该阈值，并且使能丢帧开关时，将不会取这一帧
+            minus_th：EV-丢帧阈值，当EV+计算出来的EV小于该阈值，并且使能丢帧开关时，将不会取这一帧
+        <statDefined>：直方图统计设置
+            mode     ：统计模式，0表示不加权统计，1表示加权统计
+            lowlight ：统计阈值定义，小于等于该值，则认为是低亮像素点
+            highlight：统计阈值定义，大于等于该值，并且小于过曝阈值，则认为是高亮非过曝像素点
+            non_oe   ：统计阈值定义，小于等于该值，则认为是非过曝像素点
+            oe       ：统计阈值定义，大于等于该值，则认为是过曝像素点
+        <sceneDetect>：场景检测设置
+            in.evplus  ：算法输出当前场景需要高光压制的EV值，低于该阈值时进入HDR(EV值越小表示压得越暗)
+            in.evminus ：算法输出当前场景需要暗部提亮的EV值，高于该阈值时进入HDR(EV值越高表示提亮越多)
+            out.evplus ：算法输出当前场景需要提亮的EV值，高于该阈值时退出HDR，用于极端黑色或夜景大片暗区退出HDR
+            stable_coef：进入或退出算法的稳定性系数调整，系数会施加在退出算法的阈值上；
+                          例：in_ev_plus_th设为0.5EV且当前已经进入算法，系数为0则算法输出小于0.5EV时退出算法，系数为0.1时算法输出小于(1 - 0.1) * 0.5EV = 0.45EV退出算法
+-->

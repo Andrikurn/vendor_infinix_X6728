@@ -1,0 +1,14 @@
+#add irtx for x6728 at 20250211 start
+service android.hardware.ir-service.example /vendor/bin/hw/android.hardware.ir-service.example
+    interface aidl android.hardware.ir.IConsumerIr/default
+    class hal
+    user system
+    group system
+
+on boot
+    chmod 666 /dev/lirc0
+    chown system system /dev/lirc0
+
+    chmod 666 /dev/irtx
+    chown system system /dev/irtx
+#add irtx for x6728 at 20250211 end

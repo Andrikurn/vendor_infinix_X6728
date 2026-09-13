@@ -1,0 +1,4 @@
+service vendor.trancamserver-aidl /vendor/bin/hw/trancamserver
+    class hal
+    user system
+    group system

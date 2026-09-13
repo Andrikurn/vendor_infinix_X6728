@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/transsion/bsp/fingerprint/transsion/hal/binder/manifest_transsion.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.transsion.hardware.biometrics.fingerprint</name>
+        <fqname>ITranssionFingerprintDaemon/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,148 @@
+{
+  "featureConfig": {
+    "Fingerprint": "SENSOR_FINGERPRINT_COMMON_SUPPORT",
+    "FingerprintOptical": "SENSOR_FINGERPRINT_COMMON_SUPPORT",
+    "Proximity": "SENSOR_PROXIMITY_NON_ULTRASOUND_SUPPORT"
+  },
+  "mainCycleConfig": [
+    {
+      "name": "CoolDown",
+      "timeWeight": 3,
+      "maxCount": 1
+    },
+    {
+      "name": "Color",
+      "timeWeight": 18,
+      "minCount": 1,
+      "background": [
+        "Mic",
+        "Vibrator",
+        "LinearVibrator",
+        "LinearVibrator2",
+        "Compass",
+        "Gyroscope",
+        "Gyroscope2",
+        "Fingerprint",
+        "FingerprintOptical",
+        "GpsSwitch"
+      ]
+    },
+    {
+      "name": "ColorEx",
+      "timeWeight": 20,
+      "minCount": 1,
+      "background": [
+        "Mic",
+        "Vibrator",
+        "LinearVibrator",
+        "LinearVibrator2",
+        "Compass",
+        "Gyroscope",
+        "Gyroscope2",
+        "Fingerprint",
+        "FingerprintOptical"
+      ]
+    },
+    {
+      "name": "Sleep",
+      "timeWeight": 1,
+      "maxCount": 1
+    },
+    {
+      "name": "Flashlight",
+      "timeWeight": 8,
+      "minCount": 1
+    },
+    {
+      "name": "Sleep",
+      "timeWeight": 1,
+      "maxCount": 1
+    },
+    {
+      "name": "ThreeDimension",
+      "timeWeight": 18,
+      "minCount": 1,
+      "background": [
+        "Receiver",
+        "Vibrator",
+        "LinearVibrator",
+        "LinearVibrator2",
+        "Bluetooth"
+      ]
+    },
+    {
+      "name": "ThreeDimensionEx",
+      "timeWeight": 20,
+      "minCount": 1,
+      "background": [
+        "Receiver",
+        "Vibrator",
+        "LinearVibrator",
+        "LinearVibrator2",
+        "Bluetooth"
+      ]
+    },
+    {
+      "name": "Sleep",
+      "timeWeight": 1,
+      "maxCount": 1
+    },
+    {
+      "name": "BacklightEx",
+      "timeWeight": 10,
+      "minCount": 1,
+      "background": [
+        "LightSensorSub",
+        "LightSensorSub2"
+      ]
+    },
+    {
+      "name": "Speaker",
+      "timeWeight": 8,
+      "minCount": 1,
+      "background": [
+        "WiFi"
+      ]
+    },
+    {
+      "name": "SwitchCamera",
+      "timeWeight": 20,
+      "minCount": 1,
+      "background": [
+        "Backlight",
+        "LightSensor",
+        "LightSensor2",
+        "LightSensorBack",
+        "Accelerate",
+        "Accelerate2"
+      ]
+    },
+    {
+      "name": "Sleep",
+      "timeWeight": 1,
+      "maxCount": 1
+    },
+    {
+      "name": "VideoEx",
+      "timeWeight": 10,
+      "minCount": 1,
+      "background": [
+        "WiFi",
+        "Proximity",
+        "Proximity2",
+        "ChargeLight"
+      ]
+    },
+    {
+      "name": "Video",
+      "timeWeight": 8,
+      "minCount": 1,
+      "background": [
+        "WiFi",
+        "Proximity",
+        "Proximity2",
+        "ChargeLight"
+      ]
+    }
+  ]
+}
