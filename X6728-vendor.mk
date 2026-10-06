@@ -511,7 +511,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/chg_sence_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chg_sence_init.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/dts.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dts.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/fingerprint-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-default.rc \
@@ -563,7 +562,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mbrain-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mbrain-mtk-default.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/memfusion.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memfusion.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mtk_pkm_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_pkm_service.rc \
@@ -578,7 +576,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/storagev.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/storagev.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/thermal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/thermal-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/tnev.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tnev.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/trancamserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trancamserver.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/tranfac_native.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tranfac_native.rc \
@@ -609,7 +606,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
     vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt \
     vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt \
@@ -1044,7 +1040,6 @@ PRODUCT_PACKAGES += \
     libabfadp \
     libacdk \
     libaconfig_storage_read_api_cc \
-    libaedv \
     libaimemc \
     libaipe_bokeh \
     libalsautils \
@@ -1205,7 +1200,6 @@ PRODUCT_PACKAGES += \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     libimsg_log \
-    libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
     libitdfacebeauty \
@@ -1215,7 +1209,6 @@ PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     libkmsetkey \
-    libladder \
     liblpcnr \
     liblvacfs_wrapper \
     libmbrainSDKv \
@@ -1319,7 +1312,6 @@ PRODUCT_PACKAGES += \
     libmtkmipc-ril \
     libmtknetcap \
     libmtknetutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtkrilutils \
@@ -1337,7 +1329,6 @@ PRODUCT_PACKAGES += \
     libnxp_extamp_intf \
     liboemcrypto \
     libpaytrigger.trustonic \
-    libperfctl_vendor \
     libpixsmart_hdr \
     libpixsmart_mf_base \
     libpixsmart_mf_base2 \
@@ -1348,7 +1339,6 @@ PRODUCT_PACKAGES += \
     libportrait_repair_ppl3_ocl \
     libpower_timer \
     libpowerhal \
-    libpowerhalwrap_vendor \
     libpq_cust_base \
     libpq_sec \
     libpqframework \
@@ -1515,9 +1505,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtklight-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V2-ndk \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
     vendor.mediatek.hardware.mtkpower_applist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
@@ -1590,9 +1577,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.2 \
     vendor.mediatek.hardware.mms@1.3 \
     vendor.mediatek.hardware.mtkpower-V2-ndk \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
@@ -1631,12 +1615,10 @@ PRODUCT_PACKAGES += \
     manifest_tneengine.xml \
     manifest_transsion.xml \
     mapper.mediatek.xml \
-    memtrack-mediatek.xml \
     mtk_lbs_service.xml \
     mtkpower_applist-mtk-default.xml \
     nfc-service-nxp.xml \
     power-mediatek.xml \
-    thermal-mediatek.xml \
     tranradionet-default.xml \
     vendor.hardware.trancharge-service.example.xml \
     vendor.hardware.trantp-service.xml \
@@ -1666,7 +1648,6 @@ PRODUCT_PACKAGES += \
     ccci_rpcd \
     charon \
     chg_sence \
-    chipinfo \
     dconfig \
     dexecutor \
     dmabuf_dump \
@@ -1694,14 +1675,11 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.mediatek \
     android.hardware.media.c2-mediatek-64b \
     android.hardware.media.c2@1.2-mediatek-64b \
-    android.hardware.memtrack-service.mediatek \
     android.hardware.nfc-service.nxp_v \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.trustonic \
-    android.hardware.thermal-service.mediatek \
     android.hardware.usb-aidl-service.mediatekv1.0 \
     android.hardware.usb.gadget-aidl-service.mediatekv1.0 \
-    android.hardware.vibrator-service.mediatek \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
@@ -1792,7 +1770,6 @@ PRODUCT_PACKAGES += \
     volte_stack \
     volte_ua \
     wfca \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader \
     android.hardware.audio.parameter_parser.service
