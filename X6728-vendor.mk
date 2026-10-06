@@ -1410,7 +1410,6 @@ PRODUCT_PACKAGES += \
     libsegmention \
     libsegmentionPre \
     libsensor_custom \
-    libsensorndkbridge \
     libsfplugin_ccodec_utils \
     libsilkybrightnesscore \
     libsimaka \
