@@ -905,8 +905,6 @@ PRODUCT_PACKAGES += \
     VP9SecureVdecCA \
     arm.graphics-V5-ndk \
     arm.mali.platform-V2-ndk \
-    chre_atoms_log \
-    chremetrics-cpp \
     libGLES_mali \
     libGLES_meow \
     libMEOW_data \
@@ -1163,7 +1161,6 @@ PRODUCT_PACKAGES += \
     libfft_vendor \
     libfgauge_gm30 \
     libfile_op \
-    libflatbuffers-cpp \
     libforkexecwrap \
     libformatter \
     libgamehdr \
@@ -1196,8 +1193,6 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libkaraoke \
-    libkeystore-engine-wifi-hidl \
-    libkeystore-wifi-hidl \
     libkmsetkey \
     liblpcnr \
     liblvacfs_wrapper \
@@ -1212,7 +1207,6 @@ PRODUCT_PACKAGES += \
     libmmlpqImpl \
     libmmprofile \
     libmnetlink_v104 \
-    libmnl \
     libmorpho_HDSR \
     libmp4enc_sa.ca7 \
     libmpbase \
@@ -1446,7 +1440,6 @@ PRODUCT_PACKAGES += \
     pbrohi5022q_mipi_raw_tuning \
     pbroov50d40_mipi_raw_IdxMgr \
     pbroov50d40_mipi_raw_tuning \
-    server_configurable_flags \
     libaecsw_mtk \
     libagc1sw_mtk \
     libagc2sw_mtk \
