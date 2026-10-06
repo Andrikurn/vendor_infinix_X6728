@@ -946,6 +946,13 @@ PRODUCT_PACKAGES += \
     gc08a8_sub_mipi_raw_tuning \
     hi5022q_mipi_raw_IdxMgr \
     hi5022q_mipi_raw_tuning \
+    android.hardware.audio.core-impl-mediatek \
+    android.hardware.audio.effect.aidl-impl-mediatek \
+    android.hardware.bluetooth.audio-impl-mediatek \
+    android.hardware.gnss-impl-mediatek \
+    android.hardware.graphics.allocator-V2-mediatek \
+    android.hardware.power-service-mediatek \
+    android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.renderscript@1.0-impl \
