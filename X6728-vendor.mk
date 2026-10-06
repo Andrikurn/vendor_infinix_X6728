@@ -504,7 +504,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
@@ -1687,7 +1686,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
     android.hardware.security.sharedsecret-service.trustonic.xml \
-    android.hardware.sensors-multihal.xml \
     android.hardware.tetheroffload-V1-service.xml \
     android.hardware.usb-aidl-service.mediatek.xml \
     android.hardware.usb.gadget-aidl-service.mediatek.xml \
@@ -1776,7 +1774,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp_v \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.trustonic \
-    android.hardware.sensors-service.multihal \
     android.hardware.thermal-service.mediatek \
     android.hardware.usb-aidl-service.mediatekv1.0 \
     android.hardware.usb.gadget-aidl-service.mediatekv1.0 \
