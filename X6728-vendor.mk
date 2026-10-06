@@ -555,7 +555,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/kswapd0_bind.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/kswapd0_bind.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mbrain-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mbrain-mtk-default.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
@@ -934,7 +933,6 @@ PRODUCT_PACKAGES += \
     gps.default \
     hwcomposer.mt6768 \
     libmbrainImpl \
-    lights.mt6768 \
     mapper.mediatek \
     sensors.mt6768 \
     sound_trigger.primary.default \
@@ -1497,7 +1495,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtklight-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V2-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
@@ -1599,7 +1596,6 @@ PRODUCT_PACKAGES += \
     fingerprint-default.xml \
     gnss-default.xml \
     gnss-mtk.xml \
-    lights-mtk-default.xml \
     manifest_allocator.xml \
     manifest_hwcomposer.xml \
     manifest_media_c2_default.xml \
@@ -1662,7 +1658,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator-V2-service-mediatek \
     android.hardware.graphics.composer@3.3-service \
-    android.hardware.lights-service.mediatek \
     android.hardware.media.c2-mediatek-64b \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.nfc-service.nxp_v \
