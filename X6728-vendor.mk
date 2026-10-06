@@ -969,7 +969,6 @@ PRODUCT_PACKAGES += \
     local_time.default \
     mapper.mediatek \
     power.default \
-    sensors.dynamic_sensor_hal \
     sensors.mt6768 \
     sound_trigger.primary.default \
     thermal_hal \
