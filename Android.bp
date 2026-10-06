@@ -20459,14 +20459,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "android.hardware.bluetooth-service-mediatek.xml",
-    owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.bluetooth-service-mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
 
 prebuilt_etc_xml {
     name: "android.hardware.boot-service.mtk.xml",
@@ -21788,37 +21780,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "android.hardware.bluetooth-service-mediatek",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.bluetooth-service-mediatek",
-            ],
-            shared_libs: [
-                "libcutils",
-                "android.hardware.bluetooth-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "android.hardware.boot-service.mtk",

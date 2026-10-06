@@ -487,7 +487,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init.insmod.mt6768.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6768.cfg \
     vendor/infinix/X6728/proprietary/vendor/etc/init/aee_aedv64_v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64_v2.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.bluetooth-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.boot-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.mtk.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
@@ -1590,7 +1589,6 @@ PRODUCT_PACKAGES += \
     CommandService.xml \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.xml \
-    android.hardware.bluetooth-service-mediatek.xml \
     android.hardware.boot-service.mtk.xml \
     android.hardware.drm-service.clearkey.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
@@ -1665,7 +1663,6 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.biometrics.fingerprint-service \
-    android.hardware.bluetooth-service-mediatek \
     android.hardware.boot-service.mtk \
     android.hardware.contexthub-service.tinysys \
     android.hardware.gatekeeper-service.trustonic \
