@@ -1082,7 +1082,6 @@ PRODUCT_PACKAGES += \
     libaudiotoolkit_vendor \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
-    libbinderdebug \
     libblisrc32_vendor \
     libbluetooth_audio_session_aidl_mtk \
     libbluetooth_audio_session_mediatek \
@@ -1203,7 +1202,6 @@ PRODUCT_PACKAGES += \
     libh264dec_se.ca7 \
     libheichal \
     libhevce_sb.ca7.android \
-    libhidparser \
     libhwm \
     libhydra \
     libicd_decoder \
@@ -1427,7 +1425,6 @@ PRODUCT_PACKAGES += \
     libverno \
     libvia-ril \
     libviamipc-ril \
-    libvibratorutils \
     libvolte_core_shr \
     libvolte_xdmc_shr \
     libvp8dec_sa.ca7 \
@@ -1683,7 +1680,6 @@ PRODUCT_PACKAGES += \
     doeapp-sat \
     dreport \
     dtc_vendor \
-    dumpsys \
     epdg_wod \
     factory \
     fuelgauged \
