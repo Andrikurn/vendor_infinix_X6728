@@ -599,7 +599,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.transsion.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.transsion.tranHwInfo-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.tranHwInfo-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.trustonic.tee-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee-service.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
@@ -949,7 +948,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
-    vibrator.mt6768 \
     vulkan.mali \
     lib3a.ae.core \
     lib3a.ae \
@@ -1025,7 +1023,6 @@ PRODUCT_PACKAGES += \
     lib_lvacfs \
     lib_power_applist \
     lib_tran_ffu \
-    libaacvibrator \
     libaal_cust \
     libaal_key \
     libaal_sec \
@@ -1456,7 +1453,6 @@ PRODUCT_PACKAGES += \
     libdtsaudioaidl \
     libnssw_mtk \
     libpreprocessingaidl_mtk \
-    vendor.aac.hardware.richtap.vibrator-V1-ndk \
     vendor.mediatek.framework.mtksf_ext-V2-ndk \
     vendor.mediatek.framework.mtksf_ext-V3-ndk \
     vendor.mediatek.hardware.aee-V1-ndk \
@@ -1616,7 +1612,6 @@ PRODUCT_PACKAGES += \
     vendor.transsion.hardware.trancam.trancamserver.xml \
     vendor.transsion.hardware.tranfacaidl-service.xml \
     vendor.transsion.tranHwInfo.xml \
-    vibrator-mtk-default.xml \
     manifest_dsds.xml \
     manifest_qsqs.xml \
     manifest_ss.xml \
