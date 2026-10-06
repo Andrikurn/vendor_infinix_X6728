@@ -905,13 +905,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     graphicbuffersource-aidl-ndk \
-    libmedia_codeclist \
-    libstagefright_aidl_bufferpool2 \
-    libstagefright_bufferpool@2.0.1 \
-    libstagefright_codecbase \
-    libstagefright_framecapture_utils \
-    libstagefright_graphicbuffersource_aidl \
-    libstagefright_surface_utils \
     vendor.dolby.hardware.dms@2.0 \
     libQstAlgo \
     libfsmaudio \
@@ -1157,16 +1150,10 @@ PRODUCT_PACKAGES += \
     libccci_util \
     libcharon-ss \
     libchromanr \
-    libcodec2_aidl \
     libcodec2_fsr \
-    libcodec2_hal_common \
-    libcodec2_hidl@1.1 \
-    libcodec2_hidl@1.2 \
-    libcodec2_hidl_plugin \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
-    libcodec2_soft_common \
     libcodec2_vpp_fa_plugin \
     libcodec2_vpp_mi_plugin \
     libcodec2_vpp_qt_plugin \
@@ -1244,7 +1231,6 @@ PRODUCT_PACKAGES += \
     liblpcnr \
     liblvacfs_wrapper \
     libmbrainSDKv \
-    libmediautils_vendor \
     libmeminfo \
     libmfllcore \
     libminiui \
@@ -1396,7 +1382,6 @@ PRODUCT_PACKAGES += \
     libsegmention \
     libsegmentionPre \
     libsensor_custom \
-    libsfplugin_ccodec_utils \
     libsilkybrightnesscore \
     libsimaka \
     libsimlock \
@@ -1407,8 +1392,6 @@ PRODUCT_PACKAGES += \
     libspeechparser_vendor \
     libssl-mdapp \
     libst_mobile \
-    libstagefright_aidl_bufferpool2 \
-    libstagefright_bufferpool@2.0.1 \
     libstblur_capture_api \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
