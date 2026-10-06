@@ -719,73 +719,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio@2.0-impl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "libbase",
-                "libbluetooth_audio_session",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio@2.1-impl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libbluetooth_audio_session",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "android.hardware.renderscript@1.0-impl",
@@ -5375,76 +5309,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbluetooth_audio_session_aidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session_aidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
-                "libaconfig_storage_read_api_cc",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libbinder_ndk",
-                "libfmq",
-                "liblog",
-                "libhidlbase",
-                "libxml2",
-                "libflatbuffers-cpp",
-                "server_configurable_flags",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_aidl_mtk",
@@ -16511,31 +16376,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libwpa_client",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwpa_client.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libwpfa",
@@ -22582,31 +22422,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "hostapd_cli",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hostapd_cli",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "android.hardware.audio.service-aidl.mediatek",
@@ -26197,31 +26012,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "wpa_cli",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wpa_cli",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "android.hardware.audio.parameter_parser.service",

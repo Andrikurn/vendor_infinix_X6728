@@ -935,8 +935,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V2-mediatek \
     android.hardware.power-service-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
-    android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.renderscript@1.0-impl \
     android.hardware.soundtrigger3-impl \
     audio.bluetooth.default \
@@ -1087,8 +1085,6 @@ PRODUCT_PACKAGES += \
     libbessound_hd_mtk_vendor \
     libbinderdebug \
     libblisrc32_vendor \
-    libbluetooth_audio_session \
-    libbluetooth_audio_session_aidl \
     libbluetooth_audio_session_aidl_mtk \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
@@ -1447,7 +1443,6 @@ PRODUCT_PACKAGES += \
     libwifinvramdata \
     libwifitest \
     libwo \
-    libwpa_client \
     libwpfa \
     libyuvenhance \
     libclearkeycasplugin \
@@ -1700,7 +1695,6 @@ PRODUCT_PACKAGES += \
     getfattr \
     getopt \
     gsm0710muxd \
-    hostapd_cli \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.biometrics.fingerprint-service \
     android.hardware.bluetooth-service-mediatek \
@@ -1818,5 +1812,4 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     wmt_launcher \
     wmt_loader \
-    wpa_cli \
     android.hardware.audio.parameter_parser.service
