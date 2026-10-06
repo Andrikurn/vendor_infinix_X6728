@@ -941,13 +941,10 @@ PRODUCT_PACKAGES += \
     audio.r_submix.mt6768 \
     consumerir.common \
     gps.default \
-    gralloc.default \
     hwcomposer.mt6768 \
     libmbrainImpl \
     lights.mt6768 \
-    local_time.default \
     mapper.mediatek \
-    power.default \
     sensors.mt6768 \
     sound_trigger.primary.default \
     thermal_hal \
@@ -964,7 +961,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
-    vibrator.default \
     vibrator.mt6768 \
     vulkan.mali \
     lib3a.ae.core \
