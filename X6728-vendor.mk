@@ -936,7 +936,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.soundtrigger3-impl \
-    audio.bluetooth.default \
     audio.primary.mt6768 \
     audio.r_submix.mt6768 \
     consumerir.common \
