@@ -589,7 +589,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
@@ -928,7 +927,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.graphics.allocator-V2-mediatek \
-    android.hardware.power-service-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.soundtrigger3-impl \
     audio.primary.mt6768 \
@@ -951,7 +949,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.postproc_aidl@1.0-impl \
     vendor.mediatek.hardware.gnss-impl \
-    vendor.mediatek.hardware.mtkpower-aidl-impl \
     vendor.mediatek.hardware.nvram-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
@@ -1502,7 +1499,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
     vendor.mediatek.hardware.mtklight-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V2-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
@@ -1616,7 +1612,6 @@ PRODUCT_PACKAGES += \
     mtk_lbs_service.xml \
     mtkpower_applist-mtk-default.xml \
     nfc-service-nxp.xml \
-    power-mediatek.xml \
     tranradionet-default.xml \
     vendor.hardware.trancharge-service.example.xml \
     vendor.hardware.trantp-service.xml \
@@ -1695,7 +1690,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent-service \
     vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.mms-service \
-    vendor.mediatek.hardware.mtkpower-service.mediatek \
     vendor.mediatek.hardware.mtkpower_applist-service.mediatek \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.nwk_opt@1.0-service \

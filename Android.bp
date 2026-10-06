@@ -1527,37 +1527,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-aidl-impl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkpower-aidl-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.nvram-impl",
@@ -18183,30 +18152,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-V1-ndk",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mtkpower-V2-ndk",
@@ -20707,14 +20652,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "power-mediatek.xml",
-    owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/power-mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
 
 
 prebuilt_etc_xml {
@@ -22914,44 +22851,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "vendor.mediatek.hardware.mtkpower-service.mediatek",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower-service.mediatek",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libhardware_legacy",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
-                "vendor.mediatek.hardware.mtkpower-aidl-impl",
-                "android.hardware.power-service-mediatek",
-                "libbase",
-                "libbinder_ndk",
-                "libtranlog",
-                "android.hardware.power-V5-ndk",
-                "libpower_timer",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "vendor.mediatek.hardware.mtkpower_applist-service.mediatek",
@@ -25110,43 +25009,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "android.hardware.power-service-mediatek",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.power-service-mediatek.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libfmq",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libbinder_ndk",
-                "android.hardware.power-V5-ndk",
-                "libutils",
-                "libcutils",
-                "libdrm",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "vendor.mediatek.hardware.mtkpower@1.1",
-                "vendor.mediatek.hardware.mtkpower@1.2",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "android.hardware.audio.effect.aidl-impl-mediatek",
