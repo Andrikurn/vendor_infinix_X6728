@@ -935,7 +935,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V2-mediatek \
     android.hardware.power-service-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
-    android.hardware.renderscript@1.0-impl \
     android.hardware.soundtrigger3-impl \
     audio.bluetooth.default \
     audio.primary.mt6768 \
@@ -1445,9 +1444,6 @@ PRODUCT_PACKAGES += \
     libwo \
     libwpfa \
     libyuvenhance \
-    libclearkeycasplugin \
-    libdrmclearkeyplugin \
-    libmockdrmcryptoplugin \
     meta_wifi_data \
     libdpframework \
     libmmagent \
@@ -1700,13 +1696,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service-mediatek \
     android.hardware.boot-service.mtk \
     android.hardware.contexthub-service.tinysys \
-    android.hardware.drm-service.clearkey \
     android.hardware.gatekeeper-service.trustonic \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator-V2-service-mediatek \
     android.hardware.graphics.composer@3.3-service \
-    android.hardware.health-service.example \
-    android.hardware.ir-service.example \
     android.hardware.lights-service.mediatek \
     android.hardware.media.c2-mediatek-64b \
     android.hardware.media.c2@1.2-mediatek-64b \
@@ -1718,7 +1711,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-aidl-service.mediatekv1.0 \
     android.hardware.usb.gadget-aidl-service.mediatekv1.0 \
     android.hardware.vibrator-service.mediatek \
-    android.hardware.wifi-service-lazy \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
