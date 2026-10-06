@@ -947,12 +947,8 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
     android.hardware.soundtrigger3-impl \
     audio.bluetooth.default \
-    audio.primary.default \
     audio.primary.mt6768 \
-    audio.r_submix.default \
     audio.r_submix.mt6768 \
-    audio.usb.default \
-    audio_policy.stub \
     consumerir.common \
     gps.default \
     gralloc.default \
@@ -1082,9 +1078,7 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
-    libaudio_aidl_conversion_common_ndk \
     libaudio_param_parser-vnd \
-    libaudioaidlcommon \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
     libaudiocomponentengine_vendor \
@@ -1507,33 +1501,12 @@ PRODUCT_PACKAGES += \
     pbroov50d40_mipi_raw_IdxMgr \
     pbroov50d40_mipi_raw_tuning \
     server_configurable_flags \
-    libaecsw \
     libaecsw_mtk \
-    libagc1sw \
     libagc1sw_mtk \
-    libagc2sw \
     libagc2sw_mtk \
-    libbassboostsw \
-    libbundleaidl \
-    libdownmixaidl \
     libdtsaudioaidl \
-    libdynamicsprocessingaidl \
-    libdynproc \
-    libenvreverbsw \
-    libequalizersw \
-    libextensioneffect \
-    libhapticgenerator \
-    libhapticgeneratoraidl \
-    libloudnessenhanceraidl \
-    libnssw \
     libnssw_mtk \
-    libpreprocessingaidl \
     libpreprocessingaidl_mtk \
-    libpresetreverbsw \
-    libreverbaidl \
-    libvirtualizersw \
-    libvisualizeraidl \
-    libvolumesw \
     vendor.aac.hardware.richtap.vibrator-V1-ndk \
     vendor.mediatek.framework.mtksf_ext-V2-ndk \
     vendor.mediatek.framework.mtksf_ext-V3-ndk \
