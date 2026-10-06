@@ -526,7 +526,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
@@ -1646,7 +1645,6 @@ PRODUCT_PACKAGES += \
     vendor.transsion.hardware.trannet-V4-ndk \
     vendor.transsion.hardware.tranradio-V6-ndk \
     vendor.transsion.hardware.transtorage.storage-V1-ndk \
-    vendor.transsion.hardware.wifi.hostapd-V1-ndk \
     vendor.transsion.hardware.wifi.tranSupplicant-V1-ndk \
     vendor.transsion.performance.sched.aidl-V1-ndk \
     vendor.transsion.performance.sched@1.0 \
@@ -1696,7 +1694,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-aidl-service.mediatek.xml \
     android.hardware.usb.gadget-aidl-service.mediatek.xml \
     android.hardware.wifi-service.xml \
-    android.hardware.wifi.hostapd.xml \
     android.hardware.wifi.supplicant.xml \
     bluetooth_audio.xml \
     fingerprint-default.xml \
@@ -1789,7 +1786,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek \
     android.hardware.wifi-service-lazy \
     camerahalserver \
-    hostapd \
     mtkfusionrild \
     tetheroffloadservice \
     trancamserver \
