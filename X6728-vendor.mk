@@ -493,7 +493,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.health-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.example.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.ir-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.example.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
@@ -1588,7 +1587,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.mtk.xml \
     android.hardware.drm-service.clearkey.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
-    android.hardware.health-service.example.xml \
     android.hardware.ir-service.example.xml \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
