@@ -509,7 +509,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.wifi-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi-service-lazy.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/arm.mali.platform-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/arm.mali.platform-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
@@ -1645,7 +1644,6 @@ PRODUCT_PACKAGES += \
     vendor.transsion.hardware.trannet-V4-ndk \
     vendor.transsion.hardware.tranradio-V6-ndk \
     vendor.transsion.hardware.transtorage.storage-V1-ndk \
-    vendor.transsion.hardware.wifi.tranSupplicant-V1-ndk \
     vendor.transsion.performance.sched.aidl-V1-ndk \
     vendor.transsion.performance.sched@1.0 \
     vendor.transsion.tranHwInfo-V1-ndk \
@@ -1694,7 +1692,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-aidl-service.mediatek.xml \
     android.hardware.usb.gadget-aidl-service.mediatek.xml \
     android.hardware.wifi-service.xml \
-    android.hardware.wifi.supplicant.xml \
     bluetooth_audio.xml \
     fingerprint-default.xml \
     gnss-default.xml \
@@ -1818,7 +1815,6 @@ PRODUCT_PACKAGES += \
     vendor.transsion.tranHwInfo-service \
     vendor.trustonic.tee-service \
     vtservice_aidl \
-    wpa_supplicant \
     init.insmod \
     init.mf_nowb \
     init.tasksetEnd \
